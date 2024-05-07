@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "SprintSansRegular";
+    src: url("/SprintSansRegular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #78addf;
+    --tertiary-color: #646f77;
+    --primary-bg-color: #000;
+}
+
+body {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: "SprintSansRegular", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
