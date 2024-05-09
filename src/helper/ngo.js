@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const ngoSchema = require('../models/ngoModel');
 const bcrypt = require('bcrypt');
-mongoose.connect('mongodb://localhost:27017/ngo');
+mongoose.connect('mongodb://0.0.0.0:27017/ngo');
 
 mongoose.connection.on('connected', () => {
     console.log('Connected to MongoDB @ 27017');

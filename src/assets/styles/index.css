@@ -22,14 +22,14 @@
 }
 
 .main__header {
-    font-size: 7rem;
+    font-size: 5rem;
     font-weight: 900;
     text-transform: capitalize;
     color: var(--primary-color);
 }
 
 .main__sub__header {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     text-transform: capitalize;
     color: var(--secondary-color);
@@ -79,12 +79,12 @@
 }
 
 .newsletter__content {
-    width: 70%;
+    width: 60%;
     padding: 0 20px;
 }
 
 .newsletter__form {
-    width: 30%;
+    width: 40%;
     padding: 0 20px;
 }
 

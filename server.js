@@ -1,5 +1,5 @@
-"use server";
-process.loadEnvFile();
+"use strict";
+require('dotenv').config({})
 const path = require('node:path');
 const express = require("express");
 const cookieParser = require("cookie-parser");
