@@ -1,0 +1,79 @@
+.modal__opener {
+    display: flex !important;
+}
+
+.modal__closer {
+    display: none;
+}
+
+.login__modal,
+.user__signup__modal {
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+
+
+.login__container,
+.signup__container {
+    width: 40%;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.login__heading,
+.signup__heading {
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.login__form__content,
+.signup__form__content {
+    margin-top: 50px;
+}
+
+.login__input {
+    border-radius: 10px;
+    border: 1px solid var(--tertiary-color);
+}
+
+.input {
+    border-radius: 10px;
+}
+
+.input__lab {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.login__others {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.login__btn,
+.signup__btn {
+    width: 100%;
+    border: none;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.other__options {
+    margin-top: 30px;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.link {
+    color: var(--secondary-color);
+}

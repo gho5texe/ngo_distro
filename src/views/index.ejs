@@ -47,20 +47,32 @@
 </div>
 <div class="newsletter__container row">
   <div class="newsletter__content">
-    <h1>Want To Be Notified Regarding An Event Near You?</h1>
-    <p>
+    <h1 class="newsletter__heading">
+      Want To Be Notified Regarding An Event Near You?
+    </h1>
+    <p class="newsletter__para">
       Enter your email ID to receive notifications from us and stay up to date.
     </p>
-    <p>OR</p>
-    <p>Create An Account</p>
+    <p class="or">OR</p>
+    <p class="newsletter__account">Create An Account</p>
   </div>
   <div class="newsletter__form">
-    <div class="row">
-      <div>
-        <input type="text" />
+    <div class="newsletter__form__item row">
+      <div class="input__div">
+        <input
+          class="input newsletter__input"
+          type="email"
+          placeholder="hello@example.com"
+          required
+        />
       </div>
-      <button></button>
+      <button class="notifyBtn">Notify Me</button>
     </div>
-    <p>we care about those who care about others. Read our privacy Policy</p>
+    <p class="newsletter__form__content">
+      We care about those who care about others. Read our <br />
+      <span class="privacy__policy">Privacy Policy</span>
+    </p>
   </div>
 </div>
+<%- include('layouts/login') %> <%- include('layouts/signup') %>
+<script src="/auth.js" defer></script>

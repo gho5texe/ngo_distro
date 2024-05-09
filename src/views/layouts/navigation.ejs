@@ -5,10 +5,16 @@
   <div class="nav__link__contents row">
     <ul class="nav__link__ul row">
       <li class="nav__link__li"><a href="/">Home</a></li>
-      <li class="nav__link__li"><a href="/">NGOs</a></li>
+      <li class="nav__link__li"><a href="/ngo">NGOs</a></li>
+      <li class="nav__link__li"><a href="/events">Events</a></li>
       <li class="nav__link__li"><a href="/">About</a></li>
-      <li class="nav__link__li"><a href="/">Sign In</a></li>
-      <li class="nav__link__li"><a href="/">Log In</a></li>
+      <% if(isAuthorized) { %>
+      <li class="nav__link__li"><a href="/profile">Profile</a></li>
+      <li class="nav__link__li"><a href="/logout">Logout</a></li>
+      <% } else { %>
+      <li class="nav__link__li"><a href="#signup" id="signup">Sign Up</a></li>
+      <li class="nav__link__li"><a href="#login" id="login">Log In</a></li>
+      <% } %>
     </ul>
   </div>
 </nav>

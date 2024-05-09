@@ -1,0 +1,109 @@
+<%- include('layouts/navigation') %>
+<div class="events__container">
+  <div class="events__heading">
+    <h2>Create Events</h2>
+  </div>
+  <div class="column center">
+    <form
+      class="events__form"
+      id="events__form"
+      action="/create-event"
+      method="POST"
+    >
+      <div class="input__grp row">
+        <div class="input__div">
+          <input
+            type="text"
+            class="input"
+            id="events__name"
+            placeholder="Event Name"
+            required
+          />
+        </div>
+        <div class="input__div">
+          <input
+            type="text"
+            class="input"
+            id="events__location"
+            placeholder="Event Location"
+            required
+          />
+        </div>
+      </div>
+      <div class="input__grp row">
+        <div class="input__div">
+          <input
+            type="date"
+            class="input"
+            id="events__date"
+            placeholder="Event Date"
+            required
+          />
+        </div>
+        <div class="input__div">
+          <input
+            type="time"
+            class="input"
+            id="events__time"
+            placeholder="Event Time"
+            required
+          />
+        </div>
+      </div>
+      <div class="input__grp row">
+        <div class="input__div">
+          <input
+            type="text"
+            class="input"
+            id="events__description"
+            placeholder="Event Description"
+            required
+          />
+        </div>
+        <div class="input__div">
+          <input
+            type="text"
+            class="input"
+            id="events__image"
+            placeholder="Event Image Url"
+            required
+          />
+        </div>
+      </div>
+      <div class="center">
+        <button class="create__event__btn">Create Event</button>
+      </div>
+    </form>
+  </div>
+</div>
+<style>
+  .nav__link__li a {
+    color: var(--primary-bg-color) !important;
+  }
+  .events__heading {
+    padding: 20px;
+  }
+  .events__form {
+    width: 95%;
+  }
+  .input__grp {
+    margin: 20px 0;
+    justify-content: space-between;
+  }
+  .input__div {
+    flex: none;
+    width: 45% !important;
+    border: 1px solid var(--primary-bg-color);
+  }
+  .create__event__btn {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<script src="/events.js"></script>

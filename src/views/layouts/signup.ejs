@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="/auth.css" />
+<div class="user__signup__modal modal__closer center" id="user__signup__modal">
+  <div class="signup__container">
+    <div class="signup__content">
+      <h1 class="signup__heading">Signup As Volunteer</h1>
+      <div class="signup__form__content">
+        <form action="" method="post" id="signup__form">
+          <div class="input__lab">Your Email ID</div>
+          <div class="input__div login__input">
+            <input
+              class="input"
+              type="email"
+              placeholder="Enter Your Email ID"
+              required
+              name="email"
+              id="email"
+            />
+          </div>
+          <br />
+          <div class="input__lab">Your Phone No</div>
+          <div class="input__div login__input">
+            <input
+              class="input"
+              type="number"
+              placeholder="+91 92XXXXXX"
+              required
+              name="phone"
+              id="phone"
+            />
+          </div>
+          <br />
+          <div class="input__lab">Your State</div>
+          <div class="input__div login__input">
+            <input
+              class="input"
+              type="text"
+              placeholder="Enter Your State"
+              required
+              name="state"
+              id="state"
+            />
+          </div>
+          <br />
+          <div class="input__lab">Your DOB</div>
+          <div class="input__div login__input">
+            <input class="input" type="date" required name="dob" id="dob" />
+          </div>
+          <br />
+          <div class="input__lab">Enter Password</div>
+          <div class="input__div login__input">
+            <input
+              class="input"
+              type="password"
+              placeholder="Enter Your Password"
+              required
+              name="password"
+              id="password"
+            />
+          </div>
+          <button class="signup__btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="other__options column center">
+        <div class="row">
+          <p>Want to signup as <a class="link"> NGO</a></p>
+        </div>
+        <div class="row">
+          <p>Already have a account <a class="link">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/signup.js" type="module" defer></script>
